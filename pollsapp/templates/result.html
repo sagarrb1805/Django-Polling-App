@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="list-group align-items-center">
+        <h2>{{ question }}</h2>
+        <div>
+            <table>
+                <tr>
+                    <td><h3>{{ opt1 }}</h3></td>
+                    <td><h3>{{ vote1}}%</h3></td>
+                </tr>
+                <tr>
+                    <td><h3>{{ opt2 }}</h3></td>
+                    <td><h3>{{ vote2}}%</h3></td>
+                </tr>
+                <tr>
+                    <td><h3>{{ opt3 }}</h3></td>
+                    <td><h3>{{ vote3}}%</h3></td>
+                </tr>
+                <tr>
+                    <td><h3>{{ opt4 }}</h3></td>
+                    <td><h3>{{ vote4}}%</h3></td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="padding: 20px;">
+            <a href="/polls/"><button style="background: gray;">HOME</button></a>
+        </div>
+
+    </div>
+    <style>
+        td{
+            border: 3px solid gray;
+            padding: 25px;
+            background-color: antiquewhite;
+        }
+        table{
+            border: 3px solid gray;
+        }
+    </style>
+{% endblock %}

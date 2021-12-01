@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="list-group align-items-center">
+    <div>
+        {% for poll in polls %}
+            
+            
+            <h3><a href='vote/{{poll.qid}}' class="text-reset text-decoration-none">{{ poll.question }}</a></h3>
+        
+        
+        {% endfor%}
+    </div>
+</div>
+
+{% endblock %}
